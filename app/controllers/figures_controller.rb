@@ -71,7 +71,7 @@ patch '/figures/:id' do
   @figure = Figure.find(params[:id])
 
   @landmark = Landmark.new(params[:landmark])
-  
+
   @figure.landmarks << @landmark
   @figure.update(params[:figure])
   redirect to :"/figures/#{@figure.id}"
