@@ -67,7 +67,7 @@ get '/figures/:id/edit' do
 end
 
 patch '/figures/:id' do
- binding.pry
+ # binding.pry
   @figure = Figure.find(params[:id])
 
   @landmark = Landmark.new(params[:landmark])
