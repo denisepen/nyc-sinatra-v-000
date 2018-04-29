@@ -64,7 +64,7 @@ end
 end
 
 get '/figures/:id/edit' do
-  #@song = Song.find_by_slug(params[:slug])
+  
   @figure = Figure.find(params[:id])
   erb :'/figures/edit'
 end
