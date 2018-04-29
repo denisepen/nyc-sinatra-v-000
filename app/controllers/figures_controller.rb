@@ -56,9 +56,6 @@ end
 
    @figure.titles << @title
 
-
-  # if params[:title]
-
   @figure.save
   redirect "/figures/#{@figure.id}"
 end
