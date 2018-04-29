@@ -36,7 +36,7 @@ end
 end
 
 post '/figures/show' do
-  # binding.pryS
+ binding.pry
   @figure = Figure.new(params[:figure])
 
 
