@@ -64,13 +64,13 @@ end
 end
 
 get '/figures/:id/edit' do
-  
+
   @figure = Figure.find(params[:id])
   erb :'/figures/edit'
 end
 
 patch '/figures/:id' do
-
+ binding.pry
   @figure = Figure.find(params[:id])
 
   @figure.update(params[:figure])
